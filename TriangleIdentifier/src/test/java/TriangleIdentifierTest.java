@@ -54,6 +54,17 @@ public class TriangleIdentifierTest {
     String[] triangleDoubleFalse3 = {".00", ".0", ".00"};
 
     String[] triangleDoubleFalse4 = {".01", ".01", ".9"};
+
+    String[] triangleDoubleScaleneNeg = {"-.03", "-.04", "-.05"};
+    String[] triangleDoubleIsoscelesNeg = {"-.04", "-.04", "-.05"};
+    String[] triangleDoubleEquilateralNeg = {"-.0400", "-.0400", "-.0400"};
+    String[] triangleDoubleFalseNeg = {"-.00", "-.0", "-.00"};
+
+    String[] triangleIntScaleneNeg = {"-3", "-4", "-5"};
+    String[] triangleIntIsoscelesNeg = {"-4", "-4", "-5"};
+    String[] triangleIntEquilateralNeg = {"-4", "-4", "-4"};
+    String[] triangleFalseNeg = {"-4", "-4", "-10"};
+
     @Test
     public void hasThreeArgsTest() {
         Assert.assertFalse(TriangleIdentifier.hasThreeArgs(zeroArgs));
@@ -167,6 +178,16 @@ public class TriangleIdentifierTest {
         Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleFalse3));
 
         Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleFalse4));
+
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleEquilateralNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleIsoscelesNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleScaleneNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleDoubleFalseNeg));
+
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleIntEquilateralNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleIntIsoscelesNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleIntScaleneNeg));
+        Assert.assertFalse(TriangleIdentifier.isValidInput(triangleFalseNeg));
     }
 
 }
