@@ -1,79 +1,57 @@
 package com.spencer;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 /**
  * Created by spank on 9/12/16.
  *
  * Represents a triangle based on the data from its side length.
  */
 public class Triangle {
-    private double sideA;
-    private double sideB;
-    private double sideC;
-    private String triangleType;
+    public enum TriangleType {
+        EQUILATERAL,
+        ISOSCELES,
+        SCALENE;
+    }
 
-    public Triangle(double sideA, double sideB, double sideC){
+    private final double sideA;
+    private final double sideB;
+    private final double sideC;
+    public final TriangleType triangleType;
+
+    /**
+     * Constructs a triangle in which each parameter is a side of the triangle.
+     */
+    public Triangle(double sideA, double sideB, double sideC) throws InvalidTriangleSidesException{
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
-        determineTriangleType();
-    }
-
-    public boolean isEquilateral(){
+        isTriangle();
         if(sideA == sideB && sideB == sideC) {
-            triangleType = "equilateral";
-            return true;
+            triangleType = TriangleType.EQUILATERAL;
         }
-        return false;
+        else if (sideA == sideB || sideB == sideC || sideA == sideC) {
+            triangleType = TriangleType.ISOSCELES;
+        }
+        else {
+            triangleType = TriangleType.SCALENE;
+        }
     }
 
-    public boolean isIsosceles(){
-        if (sideA == sideB || sideB == sideC || sideA == sideC) {
-            triangleType = "isosceles";
-            return true;
+    /**
+     * Checks to see if the triangle is valid. If not a InvalidTriangleSidesException is thrown
+     */
+    public void isTriangle() throws InvalidTriangleSidesException {
+        if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideB + sideA || sideA <= 0 || sideB <= 0 || sideC <= 0) {
+            throw new InvalidTriangleSidesException(Strings.validTriangleMsg);
         }
-        return false;
-    }
-
-    /* Determines the type of this triangle(equilateral, isosceles, or scalene)*/
-    public void determineTriangleType(){
-        if(isEquilateral()) return;
-        else if(isIsosceles())return;
-        else triangleType = "scalene";;
     }
 
     public void printTriangleType(){
         System.out.println("Triangle Type: " + triangleType);
     }
 
-    public double getSideA() {
-        return sideA;
-    }
-
-    public void setSideA(double sideA) {
-        this.sideA = sideA;
-    }
-
-    public double getSideB() {
-        return sideB;
-    }
-
-    public void setSideB(double sideB) {
-        this.sideB = sideB;
-    }
-
-    public double getSideC() {
-        return sideC;
-    }
-
-    public void setSideC(double sideC) {
-        this.sideC = sideC;
-    }
-
-    public String getTriangleType() {
+    public TriangleType getTriangleType() {
         return triangleType;
-    }
-
-    public void setTriangleType(String triangleType) {
-        this.triangleType = triangleType;
     }
 }

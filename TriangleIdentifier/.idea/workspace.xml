@@ -36,12 +36,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TriangleIdentifier.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TriangleIdentifier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/TriangleIdentifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="420">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidArgumentsException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/InvalidArgumentsException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+              <folding>
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidTriangleSidesException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/InvalidTriangleSidesException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="7" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +78,8 @@
       <file leaf-file-name="TriangleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TriangleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="1170">
+              <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TriangleIdentifierTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TriangleIdentifierTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TriangleIdentifierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="189" column="67" selection-start-line="189" selection-start-column="67" selection-end-line="189" selection-end-column="67" />
+            <state relative-caret-position="2835">
+              <caret line="189" column="25" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,14 +102,22 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+            <state relative-caret-position="304">
+              <caret line="44" column="131" selection-start-line="44" selection-start-column="131" selection-end-line="44" selection-end-column="131" />
               <folding>
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
-                <element signature="e#1731#1732#0" expanded="true" />
-                <element signature="e#1779#1780#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Strings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/Strings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="210" selection-start-line="8" selection-start-column="210" selection-end-line="8" selection-end-column="210" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,9 +147,14 @@
         <option value="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/StringUtils.class" />
         <option value="$PROJECT_DIR$/src/main/tests/TriangleIdentifierTest.java" />
         <option value="$PROJECT_DIR$/src/main/tests/TriangleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TriangleIdentifierTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spencer/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spencer/TriangleType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spencer/InvalidTriangleSidesException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spencer/TriangleIdentifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spencer/Strings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spencer/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spencer/InvalidArgumentsException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TriangleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TriangleIdentifierTest.java" />
       </list>
     </option>
   </component>
@@ -274,7 +316,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in TriagleIdentifier">
+  <component name="RunManager" selected="JUnit.All in TriangleIdentifier">
     <configuration default="false" name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TriangleIdentifier" />
@@ -296,7 +338,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="All in TriagleIdentifier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="All in TriangleIdentifier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TriangleIdentifier" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -600,7 +642,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.spencer.TriangleIdentifier" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="5 5 5" />
+      <option name="PROGRAM_PARAMETERS" value="0 3 5" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -612,13 +654,13 @@
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TriangleTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in TriagleIdentifier" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TriangleTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in TriangleIdentifier" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TriagleIdentifier" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TriangleIdentifier" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.TriangleTest" />
       </list>
     </recent_temporary>
@@ -642,34 +684,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 17m 20s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 17m 36s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 54m 42s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 18m 29s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 54m 59s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 18m 42s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 55m 44s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 18m 55s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 56m 50s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 19m 06s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 09h 58m 10s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 19m 18s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TriangleTest - 2016.09.13 at 08h 34m 51s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 19m 30s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TriangleTest - 2016.09.13 at 08h 42m 32s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 19m 44s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TriangleTest - 2016.09.13 at 09h 05m 25s.xml">
-      <configuration name="TriangleTest" configurationId="JUnit" />
+    <history-entry file="All_in_TriangleIdentifier - 2016.09.13 at 13h 20m 33s.xml">
+      <configuration name="All in TriangleIdentifier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TriangleTest - 2016.09.13 at 09h 17m 12s.xml">
+    <history-entry file="TriangleTest - 2016.09.13 at 13h 17m 23s.xml">
       <configuration name="TriangleTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -685,11 +727,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -701,7 +744,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -730,7 +772,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,10 +812,8 @@
         <state relative-caret-position="300">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,7 +838,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,47 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TriangleIdentifierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="189" column="67" selection-start-line="189" selection-start-column="67" selection-end-line="189" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -874,11 +879,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/TriangleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="210" selection-start-line="8" selection-start-column="210" selection-end-line="8" selection-end-column="210" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/InvalidTriangleSidesException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="7" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/InvalidArgumentsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/TriangleIdentifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spencer/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="44" column="131" selection-start-line="44" selection-start-column="131" selection-end-line="44" selection-end-column="131" />
+          <folding>
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TriangleIdentifierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="189" column="25" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

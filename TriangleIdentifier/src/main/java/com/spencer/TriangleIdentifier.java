@@ -6,59 +6,43 @@ import org.apache.commons.lang3.math.NumberUtils;
  */
 public class TriangleIdentifier {
 
-    public static final String threeArgsMsg = "Arguments are invalid. There must be exactly three arguments.";
-    public static final String validArgsMsg = "Arguments are invalid.";
-    public static final String validTriangleMsg = "Arguments are invalid. Not a valid triangle.";
-
     public static boolean isValidInput(String[] args){
-        return hasThreeArgs(args) && hasValidArgs(args) && isTriangle(args);
+        return hasThreeArgs(args) && hasValidArgs(args);
     }
 
-    /* Returns true if there are three elements in the array. */
+    /**
+     *  Returns true if there are three elements in the array.
+     *  @Params args the arguments that are provided at runtime
+     */
     public static boolean hasThreeArgs(String[] args){
         try {
             if (args.length != 3) {
-                System.out.println(threeArgsMsg);
+                System.out.println(Strings.threeArgsMsg);
                 return false;
             }
         } catch (Exception e){
             e.printStackTrace();
-            System.out.println(threeArgsMsg);
+            System.out.println(Strings.threeArgsMsg);
             return false;
         }
         return true;
     }
 
-    /* Returns true if all of the elements are numbers. */
+    /**
+     * Returns true if all of the elements are numbers.
+     * @Params args the arguments that are provided at runtime
+     */
     public static boolean hasValidArgs(String[] args){
         try {
             for (String arg : args) {
                 if (!NumberUtils.isNumber(arg)) {
-                    System.out.println(validArgsMsg);
+                    System.out.println(Strings.validArgsMsg);
                     return false;
                 }
             }
         } catch (Exception e){
             e.printStackTrace();
-            System.out.println(validArgsMsg);
-            return false;
-        }
-        return true;
-    }
-
-    /* Returns true if the elements in the array can form a valid triangle. */
-    public static boolean isTriangle(String[] args){
-        try {
-            double sideA = Double.parseDouble(args[0]);
-            double sideB = Double.parseDouble(args[1]);
-            double sideC = Double.parseDouble(args[2]);
-            if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideB + sideA || sideA <= 0 || sideB <= 0 || sideC <= 0) {
-                System.out.println(validTriangleMsg);
-                return false;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(validTriangleMsg);
+            System.out.println(Strings.validArgsMsg);
             return false;
         }
         return true;
@@ -66,8 +50,12 @@ public class TriangleIdentifier {
 
     public static void main(String[] args){
         if(isValidInput(args)){
-            Triangle triangle = new Triangle(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
-            triangle.printTriangleType();
+            try {
+                Triangle triangle = new Triangle(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+                triangle.printTriangleType();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
         }
     }
 }
