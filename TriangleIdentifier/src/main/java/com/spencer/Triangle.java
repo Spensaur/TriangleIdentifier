@@ -26,7 +26,7 @@ public class Triangle {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
-        isTriangle();
+        checkTriangle();
         if(sideA == sideB && sideB == sideC) {
             triangleType = TriangleType.EQUILATERAL;
         }
@@ -41,7 +41,7 @@ public class Triangle {
     /**
      * Checks to see if the triangle is valid. If not a InvalidTriangleSidesException is thrown
      */
-    public void isTriangle() throws InvalidTriangleSidesException {
+    public void checkTriangle() throws InvalidTriangleSidesException {
         if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideB + sideA || sideA <= 0 || sideB <= 0 || sideC <= 0) {
             throw new InvalidTriangleSidesException(Strings.validTriangleMsg);
         }

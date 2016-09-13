@@ -56,7 +56,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void isTriangleTest1(){
+    public void checkTriangleTest(){
         try {
             Triangle notATriangle1 = new Triangle(0, 3, 5);
         } catch (Exception e){

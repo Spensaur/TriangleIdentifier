@@ -6,7 +6,7 @@ import org.apache.commons.lang3.math.NumberUtils;
  */
 public class TriangleIdentifier {
 
-    public static boolean isValidInput(String[] args){
+    public static boolean isValidInput(String[] args) throws InvalidArgumentsException{
         return hasThreeArgs(args) && hasValidArgs(args);
     }
 
@@ -14,17 +14,10 @@ public class TriangleIdentifier {
      *  Returns true if there are three elements in the array.
      *  @Params args the arguments that are provided at runtime
      */
-    public static boolean hasThreeArgs(String[] args){
-        try {
-            if (args.length != 3) {
-                System.out.println(Strings.threeArgsMsg);
-                return false;
+    public static boolean hasThreeArgs(String[] args) throws InvalidArgumentsException{
+        if (args.length != 3) {
+            throw new InvalidArgumentsException(Strings.threeArgsMsg);
             }
-        } catch (Exception e){
-            e.printStackTrace();
-            System.out.println(Strings.threeArgsMsg);
-            return false;
-        }
         return true;
     }
 
@@ -32,30 +25,33 @@ public class TriangleIdentifier {
      * Returns true if all of the elements are numbers.
      * @Params args the arguments that are provided at runtime
      */
-    public static boolean hasValidArgs(String[] args){
-        try {
-            for (String arg : args) {
-                if (!NumberUtils.isNumber(arg)) {
-                    System.out.println(Strings.validArgsMsg);
-                    return false;
-                }
+    public static boolean hasValidArgs(String[] args) throws InvalidArgumentsException{
+        for (String arg : args) {
+            if (!NumberUtils.isNumber(arg)) {
+                throw new InvalidArgumentsException(Strings.validArgsMsg);
             }
-        } catch (Exception e){
-            e.printStackTrace();
-            System.out.println(Strings.validArgsMsg);
-            return false;
         }
         return true;
     }
 
     public static void main(String[] args){
-        if(isValidInput(args)){
-            try {
-                Triangle triangle = new Triangle(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
-                triangle.printTriangleType();
-            } catch (Exception e){
-                e.printStackTrace();
+        try {
+            if (isValidInput(args)) {
+                Double sideA = Double.parseDouble(args[0]);
+                Double sideB = Double.parseDouble(args[1]);
+                Double sideC = Double.parseDouble(args[2]);
+                if (Double.isInfinite(sideA) || Double.isInfinite(sideB) || Double.isInfinite(sideC)) {
+                    throw new InvalidArgumentsException("One or more of the sides have a length that is too long");
+                }
+                try {
+                    Triangle triangle = new Triangle(sideA, sideB, sideC);
+                    triangle.printTriangleType();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 }
