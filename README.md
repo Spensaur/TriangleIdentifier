@@ -3,6 +3,7 @@ Java program to identify the type of a given triangle(Equilateral, Isosceles, or
 
 In order to run this program java and maven must be installed.
 
+##Take it for a spin
 On a mac this can be done with homebrew with the following commands:
 
   brew update
