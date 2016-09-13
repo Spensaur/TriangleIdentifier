@@ -2,6 +2,8 @@ package com.spencer;
 
 /**
  * Created by spank on 9/12/16.
+ *
+ * Represents a triangle based on the data from its side length.
  */
 public class Triangle {
     private double sideA;
@@ -32,6 +34,7 @@ public class Triangle {
         return false;
     }
 
+    /* Determines the type of this triangle(equilateral, isosceles, or scalene)*/
     public void determineTriangleType(){
         if(isEquilateral()) return;
         else if(isIsosceles())return;

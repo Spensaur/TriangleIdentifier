@@ -14,6 +14,7 @@ public class TriangleIdentifier {
         return hasThreeArgs(args) && hasValidArgs(args) && isTriangle(args);
     }
 
+    /* Returns true if there are three elements in the array. */
     public static boolean hasThreeArgs(String[] args){
         try {
             if (args.length != 3) {
@@ -28,6 +29,7 @@ public class TriangleIdentifier {
         return true;
     }
 
+    /* Returns true if all of the elements are numbers. */
     public static boolean hasValidArgs(String[] args){
         try {
             for (String arg : args) {
@@ -44,6 +46,7 @@ public class TriangleIdentifier {
         return true;
     }
 
+    /* Returns true if the elements in the array can form a valid triangle. */
     public static boolean isTriangle(String[] args){
         try {
             double sideA = Double.parseDouble(args[0]);
