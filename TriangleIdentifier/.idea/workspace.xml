@@ -653,9 +653,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 07h 05m 02s.xml">
-      <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_TriagleIdentifier - 2016.09.13 at 07h 09m 29s.xml">
       <configuration name="All in TriagleIdentifier" configurationId="JUnit" />
     </history-entry>
@@ -681,6 +678,9 @@
       <configuration name="TriangleTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TriangleTest - 2016.09.13 at 08h 34m 51s.xml">
+      <configuration name="TriangleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TriangleTest - 2016.09.13 at 08h 42m 32s.xml">
       <configuration name="TriangleTest" configurationId="JUnit" />
     </history-entry>
   </component>
