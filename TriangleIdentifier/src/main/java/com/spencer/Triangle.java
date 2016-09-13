@@ -65,4 +65,12 @@ public class Triangle {
     public void setSideC(double sideC) {
         this.sideC = sideC;
     }
+
+    public String getTriangleType() {
+        return triangleType;
+    }
+
+    public void setTriangleType(String triangleType) {
+        this.triangleType = triangleType;
+    }
 }

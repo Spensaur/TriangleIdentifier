@@ -51,7 +51,7 @@ public class TriangleIdentifier {
             if (sideC >= sideB + sideA) {
                 throw new InvalidInputException();
             }
-            if (sideA == 0 || sideB == 0 || sideC == 0){
+            if (sideA <= 0 || sideB <= 0 || sideC <= 0){
                 throw new InvalidInputException();
             }
         } catch (Exception e) {
