@@ -1,33 +1,14 @@
 package com.spencer;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 /**
  * Created by spank on 9/12/16.
  */
 public class TriangleIdentifier {
 
 
-    public static boolean isEquilateral(Double sideA, Double sideB, Double sideC){
-        if(sideA == sideB && sideB == sideC) {
-            return true;
-        }
-        return false;
-    }
-
-    public static boolean isIsosceles(Double sideA, Double sideB, Double sideC){
-        if (sideA == sideB || sideB == sideC || sideA == sideC) {
-            return true;
-        }
-        return false;
-    }
-
-    public static boolean isScalene(){
-        return true;
-    }
-
     public static boolean isValidInput(String[] args){
-        return hasThreeArgs(args) && hasValidArgs(args) &&
-                isTriangle(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+        return hasThreeArgs(args) && hasValidArgs(args) && isTriangle(args);
     }
 
     public static boolean hasThreeArgs(String[] args){
@@ -45,7 +26,7 @@ public class TriangleIdentifier {
     public static boolean hasValidArgs(String[] args){
         try {
             for(String arg: args){
-                if(!StringUtils.isNumeric(arg)){
+                if(!NumberUtils.isNumber(arg)){
                     throw  new InvalidInputException();
                 }
             }
@@ -56,8 +37,11 @@ public class TriangleIdentifier {
         return true;
     }
 
-    public static boolean isTriangle(Double sideA, Double sideB, Double sideC){
+    public static boolean isTriangle(String[] args){
         try {
+            double sideA = Double.parseDouble(args[0]);
+            double sideB = Double.parseDouble(args[1]);
+            double sideC = Double.parseDouble(args[2]);
             if (sideA >= sideB + sideC) {
                 throw new InvalidInputException();
             }
@@ -67,7 +51,10 @@ public class TriangleIdentifier {
             if (sideC >= sideB + sideA) {
                 throw new InvalidInputException();
             }
-        } catch (InvalidInputException e){
+            if (sideA == 0 || sideB == 0 || sideC == 0){
+                throw new InvalidInputException();
+            }
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
@@ -75,6 +62,9 @@ public class TriangleIdentifier {
     }
 
     public static void main(String[] args){
-        System.out.println(isValidInput(args));
+        if(isValidInput(args)){
+            Triangle triangle = new Triangle(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+            triangle.printTriangleType();
+        }
     }
 }

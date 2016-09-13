@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="TriagleIdentifier" />
+        <module name="TriangleIdentifier" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="TriagleIdentifier" target="1.8" />
+      <module name="TriangleIdentifier" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

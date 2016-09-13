@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TriagleIdentifier.iml" filepath="$PROJECT_DIR$/TriagleIdentifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TriangleIdentifier.iml" filepath="$PROJECT_DIR$/TriangleIdentifier.iml" />
     </modules>
   </component>
 </project>
