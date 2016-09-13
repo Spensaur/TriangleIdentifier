@@ -1,14 +1,13 @@
 # TriangleIdentifier
 Java program to identify the type of a given triangle(Equilateral, Isosceles, or Scalene).
 
+## How to run this program
 In order to run this program java and maven must be installed.
-
-##Take it for a spin
 On a mac this can be done with homebrew with the following commands:
 
-  brew update
-  brew cask install java
-  brew install maven
+    brew update
+    brew cask install java
+    brew install maven
 
 Once java and maven are installed the program can be built with the following commands:
 
