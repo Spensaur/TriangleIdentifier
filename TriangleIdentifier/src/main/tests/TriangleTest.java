@@ -1,6 +1,4 @@
-import com.spencer.InvalidInputException;
 import com.spencer.Triangle;
-import com.spencer.TriangleIdentifier;
 import org.junit.Assert;
 import org.junit.Test;
 

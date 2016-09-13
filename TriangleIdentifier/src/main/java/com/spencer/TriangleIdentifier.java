@@ -14,9 +14,9 @@ public class TriangleIdentifier {
     public static boolean hasThreeArgs(String[] args){
         try {
             if (args.length != 3) {
-                throw new InvalidInputException();
+                return false;
             }
-        } catch (InvalidInputException e){
+        } catch (Exception e){
             e.printStackTrace();
             return false;
         }
@@ -25,12 +25,12 @@ public class TriangleIdentifier {
 
     public static boolean hasValidArgs(String[] args){
         try {
-            for(String arg: args){
-                if(!NumberUtils.isNumber(arg)){
-                    throw  new InvalidInputException();
+            for (String arg : args) {
+                if (!NumberUtils.isNumber(arg)) {
+                    return false;
                 }
             }
-        } catch (InvalidInputException e){
+        } catch (Exception e){
             e.printStackTrace();
             return false;
         }
@@ -43,16 +43,16 @@ public class TriangleIdentifier {
             double sideB = Double.parseDouble(args[1]);
             double sideC = Double.parseDouble(args[2]);
             if (sideA >= sideB + sideC) {
-                throw new InvalidInputException();
+                return false;
             }
             if (sideB >= sideA + sideC) {
-                throw new InvalidInputException();
+                return false;
             }
             if (sideC >= sideB + sideA) {
-                throw new InvalidInputException();
+                return false;
             }
             if (sideA <= 0 || sideB <= 0 || sideC <= 0){
-                throw new InvalidInputException();
+                return false;
             }
         } catch (Exception e) {
             e.printStackTrace();
