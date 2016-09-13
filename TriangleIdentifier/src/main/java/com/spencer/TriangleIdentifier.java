@@ -47,11 +47,11 @@ public class TriangleIdentifier {
                     Triangle triangle = new Triangle(sideA, sideB, sideC);
                     triangle.printTriangleType();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    System.out.println(e.getMessage());
                 }
             }
         } catch (Exception e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }
