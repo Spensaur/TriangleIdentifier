@@ -5,11 +5,9 @@ In order to run this program java and maven must be installed.
 
 On a mac this can be done with homebrew with the following commands:
 
-brew update
-
-brew cask install java
-
-brew install maven
+  brew update
+  brew cask install java
+  brew install maven
 
 Once java and maven are installed the program can be built with the following commands:
 
