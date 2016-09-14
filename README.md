@@ -9,7 +9,7 @@ On a mac this can be done with homebrew with the following commands:
     brew cask install java
     brew install maven
 
-Once java and maven are installed, change your directory to this projects directory and the program can be built and ran with the following commands:
+Once java and maven are installed, change your working directory to this projects directory and the program can be built and ran with the following commands:
 
     mvn package
     java -cp target/TriangleIdentifier-1.0-SNAPSHOT-jar-with-dependencies.jar com.spencer.TriangleIdentifier arg1 arg2 arg3
