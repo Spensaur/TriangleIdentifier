@@ -1,6 +1,4 @@
-
 import com.spencer.InvalidArgumentsException;
-import com.spencer.InvalidTriangleSidesException;
 import com.spencer.Strings;
 import com.spencer.TriangleIdentifier;
 import org.junit.Assert;
