@@ -16,7 +16,7 @@ public class TriangleIdentifier {
      */
     public static boolean hasThreeArgs(String[] args) throws InvalidArgumentsException{
         if (args.length != 3) {
-            throw new InvalidArgumentsException(Strings.threeArgsMsg);
+            throw new InvalidArgumentsException(Strings.THREE_ARG_MSG);
             }
         return true;
     }
@@ -28,7 +28,7 @@ public class TriangleIdentifier {
     public static boolean hasValidArgs(String[] args) throws InvalidArgumentsException{
         for (String arg : args) {
             if (!NumberUtils.isNumber(arg)) {
-                throw new InvalidArgumentsException(Strings.validArgsMsg);
+                throw new InvalidArgumentsException(Strings.VALID_ARG_MSG);
             }
         }
         return true;

@@ -69,23 +69,23 @@ public class TriangleIdentifierTest {
         try {
             TriangleIdentifier.hasThreeArgs(threeArgs);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasThreeArgs(threeArgsDouble);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasThreeArgs(hexThree);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
 
         try {
             TriangleIdentifier.hasThreeArgs(triangleIntEquilateral3);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
     }
 
@@ -94,42 +94,42 @@ public class TriangleIdentifierTest {
         try {
             TriangleIdentifier.hasValidArgs(zeroArgs);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(twoArgsInt);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(fourArgsInt);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(threeArgsInt);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(twoArgsDouble);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(fourArgsDouble);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(threeArgsDouble);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
         try {
             TriangleIdentifier.hasValidArgs(triangleIntEquilateral3);
         } catch (Exception e) {
-            Assert.fail(Strings.exceptionTestString);
+            Assert.fail(Strings.EXCEPTION_TEST_STRING);
         }
     }
 }

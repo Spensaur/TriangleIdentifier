@@ -62,7 +62,6 @@ public class TriangleTest {
     @Test(expected = InvalidTriangleSidesException.class)
     public void triangleExceptionLargeTest() throws InvalidTriangleSidesException {
         Double largeNum = Double.parseDouble("9e9999999999999999999999999999999999999999999999999999999999999999999999999999999999");
-        System.out.println(largeNum);
         triangleExceptionLarge = new Triangle(largeNum, largeNum, largeNum);
     }
 

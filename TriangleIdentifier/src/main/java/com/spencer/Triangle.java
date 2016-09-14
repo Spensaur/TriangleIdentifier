@@ -41,10 +41,10 @@ public class Triangle {
      */
     public void checkTriangle() throws InvalidTriangleSidesException {
         if (Double.isInfinite(sideA) || Double.isInfinite(sideB) || Double.isInfinite(sideC)) {
-            throw new InvalidTriangleSidesException(Strings.infinityMsg);
+            throw new InvalidTriangleSidesException(Strings.INFINITY_MSG);
         }
         if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideB + sideA || sideA <= 0 || sideB <= 0 || sideC <= 0) {
-            throw new InvalidTriangleSidesException(Strings.validTriangleMsg);
+            throw new InvalidTriangleSidesException(Strings.VALID_TRIANGLE_MSG);
         }
     }
 
