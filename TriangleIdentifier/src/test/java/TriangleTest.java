@@ -1,6 +1,7 @@
 import com.spencer.InvalidArgumentsException;
 import com.spencer.InvalidTriangleSidesException;
 import com.spencer.Triangle;
+import com.spencer.TriangleIdentifier;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,6 +23,11 @@ public class TriangleTest {
     static Triangle scaleneDouble1;
     static Triangle scaleneDouble2;
 
+    Triangle triangleExceptionZero;
+    Triangle triangleExceptionNegative;
+    Triangle triangleExceptionLarge;
+    Triangle triangleExceptionIlligalSide;
+
     static {
         try {
             equilateralInt = new Triangle(5, 5, 5);
@@ -40,6 +46,28 @@ public class TriangleTest {
         }
     }
 
+    @Test(expected = InvalidTriangleSidesException.class)
+    public void triangleExceptionZeroTest() throws InvalidTriangleSidesException {
+        triangleExceptionZero = new Triangle(0, 3, 3);
+    }
+
+    @Test(expected = InvalidTriangleSidesException.class)
+    public void triangleExceptionNegativeTest() throws InvalidTriangleSidesException {
+        triangleExceptionNegative = new Triangle(-1, 5, 5);
+    }
+
+    @Test(expected = InvalidTriangleSidesException.class)
+    public void triangleExceptionIlligalSideTest() throws InvalidTriangleSidesException {
+        triangleExceptionIlligalSide = new Triangle(1, 2, 3);
+    }
+
+    @Test(expected = InvalidTriangleSidesException.class)
+    public void triangleExceptionLargeTest() throws InvalidTriangleSidesException {
+        Double largeNum = Double.parseDouble("9e9999999999999999999999999999999999999999999999999999999999999999999999999999999999");
+        System.out.println(largeNum);
+        triangleExceptionLarge = new Triangle(largeNum, largeNum, largeNum);
+    }
+
     @Test
     public void determineTriangleTypeTest(){
         Assert.assertEquals(Triangle.TriangleType.EQUILATERAL, equilateralInt.getTriangleType());
@@ -55,30 +83,4 @@ public class TriangleTest {
         Assert.assertEquals(Triangle.TriangleType.SCALENE, scaleneDouble2.getTriangleType());
     }
 
-    @Test
-    public void checkTriangleTest(){
-        try {
-            Triangle notATriangle1 = new Triangle(0, 3, 5);
-        } catch (Exception e){
-            Assert.assertTrue(e.getClass() == InvalidTriangleSidesException.class);
-        }
-
-        try {
-            Triangle notATriangle1 = new Triangle(-1, 3, 5);
-        } catch (Exception e){
-            Assert.assertTrue(e.getClass() == InvalidTriangleSidesException.class);
-        }
-
-        try {
-            Triangle notATriangle1 = new Triangle(1, 2, 3);
-        } catch (Exception e){
-            Assert.assertTrue(e.getClass() == InvalidTriangleSidesException.class);
-        }
-
-        try {
-            Triangle notATriangle1 = new Triangle(0.01, 2, 5);
-        } catch (Exception e){
-            Assert.assertTrue(e.getClass() == InvalidTriangleSidesException.class);
-        }
-    }
 }

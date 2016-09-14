@@ -40,9 +40,6 @@ public class TriangleIdentifier {
                 Double sideA = Double.parseDouble(args[0]);
                 Double sideB = Double.parseDouble(args[1]);
                 Double sideC = Double.parseDouble(args[2]);
-                if (Double.isInfinite(sideA) || Double.isInfinite(sideB) || Double.isInfinite(sideC)) {
-                    throw new InvalidArgumentsException("One or more of the sides have a length that is too long");
-                }
                 try {
                     Triangle triangle = new Triangle(sideA, sideB, sideC);
                     triangle.printTriangleType();

@@ -42,6 +42,9 @@ public class Triangle {
      * Checks to see if the triangle is valid. If not a InvalidTriangleSidesException is thrown
      */
     public void checkTriangle() throws InvalidTriangleSidesException {
+        if (Double.isInfinite(sideA) || Double.isInfinite(sideB) || Double.isInfinite(sideC)) {
+            throw new InvalidTriangleSidesException(Strings.infinityMsg);
+        }
         if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideB + sideA || sideA <= 0 || sideB <= 0 || sideC <= 0) {
             throw new InvalidTriangleSidesException(Strings.validTriangleMsg);
         }
